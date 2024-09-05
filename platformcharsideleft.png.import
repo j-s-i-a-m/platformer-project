@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4sxkk1yb4gsf"
-path="res://.godot/imported/platformcharside.png-d51289f8efbcca74deaa6744801ab386.ctex"
+path="res://.godot/imported/platformcharsideleft.png-a9c329461117b188125ed93f1475dfaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://platformcharside.png"
-dest_files=["res://.godot/imported/platformcharside.png-d51289f8efbcca74deaa6744801ab386.ctex"]
+source_file="res://platformcharsideleft.png"
+dest_files=["res://.godot/imported/platformcharsideleft.png-a9c329461117b188125ed93f1475dfaf.ctex"]
 
 [params]
 
