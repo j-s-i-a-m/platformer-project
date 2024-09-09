@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4sxkk1yb4gsf"
-path="res://.godot/imported/platformcharsideleft.png-a9c329461117b188125ed93f1475dfaf.ctex"
+uid="uid://obys1qoqcq7m"
+path="res://.godot/imported/Game Boy Advance - One Piece - Monkey D Luffy.png-efd1be361bfbe2870b29ee6bc0725e5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://platformcharsideleft.png"
-dest_files=["res://.godot/imported/platformcharsideleft.png-a9c329461117b188125ed93f1475dfaf.ctex"]
+source_file="res://Player/Game Boy Advance - One Piece - Monkey D Luffy.png"
+dest_files=["res://.godot/imported/Game Boy Advance - One Piece - Monkey D Luffy.png-efd1be361bfbe2870b29ee6bc0725e5a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqhrxmdg7tk44"
-path="res://.godot/imported/platformcharsideright.png-be679163d6aa592d97377316c11effdc.ctex"
+uid="uid://b5hkehruy6wyr"
+path="res://.godot/imported/PC Computer - Katana ZERO - Fifteen.png-d9cb4e1c1b2d7b062550bff4303f24e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://platformcharsideright.png"
-dest_files=["res://.godot/imported/platformcharsideright.png-be679163d6aa592d97377316c11effdc.ctex"]
+source_file="res://Player/PC Computer - Katana ZERO - Fifteen.png"
+dest_files=["res://.godot/imported/PC Computer - Katana ZERO - Fifteen.png-d9cb4e1c1b2d7b062550bff4303f24e6.ctex"]
 
 [params]
 
