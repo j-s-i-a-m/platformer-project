@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://ca6ghpyj44c38"]
+[gd_scene load_steps=12 format=3 uid="uid://ca6ghpyj44c38"]
 
 [ext_resource type="Texture2D" uid="uid://obys1qoqcq7m" path="res://Player/Game Boy Advance - One Piece - Monkey D Luffy.png" id="1_chjco"]
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_ultdt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rjy41"]
 atlas = ExtResource("1_chjco")
@@ -63,13 +64,15 @@ animations = [{
 radius = 41.0
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ultdt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(89, 96)
+position = Vector2(-2.75, -11.25)
 scale = Vector2(2.26923, 2.16964)
 sprite_frames = SubResource("SpriteFrames_1p58v")
-frame_progress = 0.634833
+autoplay = "default"
+frame_progress = 0.945617
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(91, 107)
+position = Vector2(-0.75, -0.25)
 shape = SubResource("CircleShape2D_6sd8q")
