@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dya52ckwtv2no"
-path="res://.godot/imported/tex_enm_icon_1040191.png-a418fe6044fb9b89dfb304d789f2bec6.ctex"
+uid="uid://bxbxwf7twwuaw"
+path="res://.godot/imported/PlatformerTile-purple.png-d71ff2b320b8f943fbc41e304b4d482b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tex_enm_icon_1040191.png"
-dest_files=["res://.godot/imported/tex_enm_icon_1040191.png-a418fe6044fb9b89dfb304d789f2bec6.ctex"]
+source_file="res://Assets/PlatformerTile-purple.png"
+dest_files=["res://.godot/imported/PlatformerTile-purple.png-d71ff2b320b8f943fbc41e304b4d482b.ctex"]
 
 [params]
 

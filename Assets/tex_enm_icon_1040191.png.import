@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b13cdn5hppd7p"
-path="res://.godot/imported/tex_enm_icon_1040041.png-8ee470d67bce735e226cda8c9001d0ef.ctex"
+uid="uid://dya52ckwtv2no"
+path="res://.godot/imported/tex_enm_icon_1040191.png-3e68c90b1ab9c068c72d64d60b42a489.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tex_enm_icon_1040041.png"
-dest_files=["res://.godot/imported/tex_enm_icon_1040041.png-8ee470d67bce735e226cda8c9001d0ef.ctex"]
+source_file="res://Assets/tex_enm_icon_1040191.png"
+dest_files=["res://.godot/imported/tex_enm_icon_1040191.png-3e68c90b1ab9c068c72d64d60b42a489.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxbxwf7twwuaw"
-path="res://.godot/imported/PlatformerTile-purple.png-547d02a8d048a8af2f8dc1a6a6f0038e.ctex"
+uid="uid://7803yid0xpof"
+path="res://.godot/imported/wall block.png-12f7c06c2ce4cf757a223f98b72ed742.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PlatformerTile-purple.png"
-dest_files=["res://.godot/imported/PlatformerTile-purple.png-547d02a8d048a8af2f8dc1a6a6f0038e.ctex"]
+source_file="res://Assets/wall block.png"
+dest_files=["res://.godot/imported/wall block.png-12f7c06c2ce4cf757a223f98b72ed742.ctex"]
 
 [params]
 

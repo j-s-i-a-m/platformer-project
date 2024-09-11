@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7803yid0xpof"
-path="res://.godot/imported/wall block.png-93737fdb82edb27242bede36b3d6ed41.ctex"
+uid="uid://c2fgouxtd0exl"
+path="res://.godot/imported/tex_enm_icon_1120701.png-77387854ee5a35d191edab9b994a0753.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://wall block.png"
-dest_files=["res://.godot/imported/wall block.png-93737fdb82edb27242bede36b3d6ed41.ctex"]
+source_file="res://Assets/tex_enm_icon_1120701.png"
+dest_files=["res://.godot/imported/tex_enm_icon_1120701.png-77387854ee5a35d191edab9b994a0753.ctex"]
 
 [params]
 

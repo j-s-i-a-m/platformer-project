@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2fgouxtd0exl"
-path="res://.godot/imported/tex_enm_icon_1120701.png-83cfffc68a89954e9c338aedc120742f.ctex"
+uid="uid://crnxgxcqf2iao"
+path="res://.godot/imported/SNES - Pinocchio - Level 2 - Lampside Setting.png-0ecb2499bcad3a5cadc096e2cdbade87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tex_enm_icon_1120701.png"
-dest_files=["res://.godot/imported/tex_enm_icon_1120701.png-83cfffc68a89954e9c338aedc120742f.ctex"]
+source_file="res://Assets/SNES - Pinocchio - Level 2 - Lampside Setting.png"
+dest_files=["res://.godot/imported/SNES - Pinocchio - Level 2 - Lampside Setting.png-0ecb2499bcad3a5cadc096e2cdbade87.ctex"]
 
 [params]
 
