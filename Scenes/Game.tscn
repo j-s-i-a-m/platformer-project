@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://k2y8c2i4vqsn"]
+[gd_scene load_steps=6 format=3 uid="uid://k2y8c2i4vqsn"]
 
 [ext_resource type="Texture2D" uid="uid://crnxgxcqf2iao" path="res://Assets/SNES - Pinocchio - Level 2 - Lampside Setting.png" id="1_tssgv"]
 [ext_resource type="PackedScene" uid="uid://ca6ghpyj44c38" path="res://Scenes/Player.tscn" id="1_tt7bu"]
 [ext_resource type="Texture2D" uid="uid://oqfov5ywna8m" path="res://Assets/Dungeon Tile Set.png" id="2_ivhec"]
-[ext_resource type="PackedScene" uid="uid://lu4lmmsnmjwr" path="res://killzone.tscn" id="4_wrjjw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_de2c1"]
 texture = ExtResource("2_ivhec")
@@ -451,7 +450,3 @@ position = Vector2(-524, -222)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(99, 3)
 scale = Vector2(119.422, 6.92)
-
-[node name="Killzone" parent="." instance=ExtResource("4_wrjjw")]
-position = Vector2(-610, 104)
-collision_mask = 1
