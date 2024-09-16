@@ -454,3 +454,4 @@ scale = Vector2(119.422, 6.92)
 
 [node name="Killzone" parent="." instance=ExtResource("4_wrjjw")]
 position = Vector2(-610, 104)
+collision_mask = 1
