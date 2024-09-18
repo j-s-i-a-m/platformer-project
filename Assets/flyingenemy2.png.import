@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b13cdn5hppd7p"
-path="res://.godot/imported/tex_enm_icon_1040041.png-612814ef016e2f0f4753a9a6cd310573.ctex"
+uid="uid://dya52ckwtv2no"
+path="res://.godot/imported/flyingenemy2.png-29a6de7bb13b2c0c453c2d08206e035f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tex_enm_icon_1040041.png"
-dest_files=["res://.godot/imported/tex_enm_icon_1040041.png-612814ef016e2f0f4753a9a6cd310573.ctex"]
+source_file="res://Assets/flyingenemy2.png"
+dest_files=["res://.godot/imported/flyingenemy2.png-29a6de7bb13b2c0c453c2d08206e035f.ctex"]
 
 [params]
 
