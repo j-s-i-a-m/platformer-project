@@ -251,8 +251,7 @@ collision_layer = 2
 script = ExtResource("1_ultdt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(9, -16)
-scale = Vector2(3.4664, 2.16964)
+scale = Vector2(2.64987, 2.16964)
 sprite_frames = SubResource("SpriteFrames_1p58v")
 animation = &"jump"
 autoplay = "idle"
