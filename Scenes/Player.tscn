@@ -243,21 +243,22 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_6sd8q"]
-radius = 41.6788
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nff2g"]
+size = Vector2(20, 71.006)
 
 [node name="Player" type="CharacterBody2D"]
+scale = Vector2(5.95458, 7.6541)
 collision_layer = 2
 script = ExtResource("1_ultdt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.64987, 2.16964)
 sprite_frames = SubResource("SpriteFrames_1p58v")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame = 28
-frame_progress = 1.0
+frame_progress = 0.21427
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.75, -0.25)
-shape = SubResource("CircleShape2D_6sd8q")
+position = Vector2(0, 7.18569)
+scale = Vector2(2.34626, 1.17758)
+shape = SubResource("RectangleShape2D_nff2g")
