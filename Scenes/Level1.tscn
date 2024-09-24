@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://k2y8c2i4vqsn"]
+[gd_scene load_steps=12 format=3 uid="uid://k2y8c2i4vqsn"]
 
 [ext_resource type="Texture2D" uid="uid://crnxgxcqf2iao" path="res://Assets/SNES - Pinocchio - Level 2 - Lampside Setting.png" id="1_tssgv"]
 [ext_resource type="PackedScene" uid="uid://ca6ghpyj44c38" path="res://Scenes/Player.tscn" id="1_tt7bu"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://lu4lmmsnmjwr" path="res://killzone.tscn" id="4_wrjjw"]
 [ext_resource type="Texture2D" uid="uid://b13cdn5hppd7p" path="res://Assets/flyingenemy.png" id="5_k57fy"]
 [ext_resource type="Texture2D" uid="uid://dya52ckwtv2no" path="res://Assets/flyingenemy2.png" id="6_nf0pp"]
+[ext_resource type="Texture2D" uid="uid://b4yvddlcqmdt7" path="res://Assets/door.png" id="7_16t8h"]
+[ext_resource type="PackedScene" uid="uid://i5qxpn3mdl6" path="res://key.tscn" id="8_lty0a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_de2c1"]
 texture = ExtResource("2_ivhec")
@@ -441,6 +443,8 @@ texture = ExtResource("2_ivhec")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_de2c1")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p78dk"]
+
 [node name="Game" type="Node2D"]
 
 [node name="Snes-Pinocchio-Level2-LampsideSetting" type="Sprite2D" parent="."]
@@ -473,3 +477,22 @@ texture = ExtResource("5_k57fy")
 [node name="flyingenemy2" type="Sprite2D" parent="."]
 position = Vector2(-35, -254)
 texture = ExtResource("6_nf0pp")
+
+[node name="door" type="StaticBody2D" parent="."]
+position = Vector2(1739, 665)
+
+[node name="door zone" type="Area2D" parent="door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door/door zone"]
+scale = Vector2(6.88752, -8.8473)
+shape = SubResource("CapsuleShape2D_p78dk")
+
+[node name="Sprite2D" type="Sprite2D" parent="door"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_16t8h")
+
+[node name="key" parent="." instance=ExtResource("8_lty0a")]
+position = Vector2(-1073, -536)
+scale = Vector2(0.2, 0.2)
+
+[connection signal="body_entered" from="door/door zone" to="key" method="_on_door_zone_body_entered"]
