@@ -454,7 +454,6 @@ scale = Vector2(141.35, -95.0062)
 texture = ExtResource("2_iyrva")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(0, -2)
 scale = Vector2(3.62422, 3.53538)
 tile_set = SubResource("TileSet_dk7og")
 format = 2
