@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://c3v8uqm6svryr"]
+
+[ext_resource type="Texture2D" uid="uid://ch35cg7cyfcpy" path="res://Assets/captainsmoker.png" id="1_3b5no"]
+[ext_resource type="Script" path="res://Scenes/evil_zoro.gd" id="1_f1reo"]
+[ext_resource type="PackedScene" uid="uid://lu4lmmsnmjwr" path="res://Scenes/killzone.tscn" id="2_uvwdf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61ycw"]
+atlas = ExtResource("1_3b5no")
+region = Rect2(0, 69, 51, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihcr6"]
+atlas = ExtResource("1_3b5no")
+region = Rect2(51, 69, 51, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6f8om"]
+atlas = ExtResource("1_3b5no")
+region = Rect2(102, 69, 51, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qvfp"]
+atlas = ExtResource("1_3b5no")
+region = Rect2(153, 69, 51, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfk3x"]
+atlas = ExtResource("1_3b5no")
+region = Rect2(204, 69, 51, 69)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lqogg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61ycw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihcr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6f8om")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qvfp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfk3x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j1jt4"]
+height = 56.0
+
+[node name="EvilZoro" type="Node2D"]
+script = ExtResource("1_f1reo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lqogg")
+autoplay = "default"
+frame_progress = 0.851019
+
+[node name="Killzone" parent="." instance=ExtResource("2_uvwdf")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-9, 1)
+shape = SubResource("CapsuleShape2D_j1jt4")
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-10, 0)
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(10, 0)
