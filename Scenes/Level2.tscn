@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d4aekni8j46d3" path="res://Assets/background.png" id="2_iyrva"]
 [ext_resource type="Texture2D" uid="uid://oqfov5ywna8m" path="res://Assets/Dungeon Tile Set.png" id="2_kwa6f"]
 [ext_resource type="PackedScene" uid="uid://ca6ghpyj44c38" path="res://Scenes/Player.tscn" id="3_1csgy"]
-[ext_resource type="PackedScene" uid="uid://lu4lmmsnmjwr" path="res://Scenes/killzone.tscn" id="4_02064"]
+[ext_resource type="PackedScene" path="res://Scenes/killzone.tscn" id="4_02064"]
 [ext_resource type="Texture2D" uid="uid://b13cdn5hppd7p" path="res://Assets/flyingenemy.png" id="5_8pm67"]
 [ext_resource type="Texture2D" uid="uid://dya52ckwtv2no" path="res://Assets/flyingenemy2.png" id="6_oih6t"]
 
