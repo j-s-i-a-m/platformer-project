@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfoqgfukshpe"]
+
+[ext_resource type="Texture2D" uid="uid://bxbxwf7twwuaw" path="res://Assets/PlatformerTile-purple.png" id="1_jpmy8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vm2vk"]
+size = Vector2(32, 8)
+
+[node name="Platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jpmy8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vm2vk")
+one_way_collision = true

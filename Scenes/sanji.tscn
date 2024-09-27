@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://bgcwke2edfm2a"]
+
+[ext_resource type="Script" path="res://Scenes/Node2D.gd" id="1_r3qyr"]
+[ext_resource type="Texture2D" uid="uid://cdnujiwe1oyi6" path="res://Assets/usopp.png" id="2_6rk0k"]
+[ext_resource type="PackedScene" uid="uid://lu4lmmsnmjwr" path="res://Scenes/killzone.tscn" id="3_a4lqv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3jmd"]
+atlas = ExtResource("2_6rk0k")
+region = Rect2(0, 340, 30, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhxne"]
+atlas = ExtResource("2_6rk0k")
+region = Rect2(31, 340, 19, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otwm8"]
+atlas = ExtResource("2_6rk0k")
+region = Rect2(50, 340, 25, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7hok"]
+atlas = ExtResource("2_6rk0k")
+region = Rect2(75, 340, 25, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j41ov"]
+atlas = ExtResource("2_6rk0k")
+region = Rect2(108, 340, 27, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0r1m"]
+atlas = ExtResource("2_6rk0k")
+region = Rect2(132, 340, 22, 68)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m5x1n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l3jmd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dhxne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otwm8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7hok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j41ov")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0r1m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jygd2"]
+radius = 7.0
+height = 48.0
+
+[node name="Sanji" type="Node2D"]
+script = ExtResource("1_r3qyr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m5x1n")
+autoplay = "default"
+frame_progress = 0.988927
+
+[node name="Killzone" parent="." instance=ExtResource("3_a4lqv")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("CapsuleShape2D_jygd2")
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, -1)
+target_position = Vector2(-10, 0)
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, -1)
+target_position = Vector2(10, 0)
