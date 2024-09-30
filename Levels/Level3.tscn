@@ -1,15 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://sdghds3q7tkw"]
+[gd_scene load_steps=11 format=3 uid="uid://sdghds3q7tkw"]
 
-[ext_resource type="Texture2D" uid="uid://crnxgxcqf2iao" path="res://Assets/SNES - Pinocchio - Level 2 - Lampside Setting.png" id="1_t886o"]
-[ext_resource type="Texture2D" uid="uid://d4aekni8j46d3" path="res://Assets/background.png" id="2_gnap7"]
-[ext_resource type="Texture2D" uid="uid://oqfov5ywna8m" path="res://Assets/Dungeon Tile Set.png" id="3_oe5fb"]
-[ext_resource type="PackedScene" uid="uid://ca6ghpyj44c38" path="res://Scenes/Player.tscn" id="4_0jrwc"]
-[ext_resource type="PackedScene" path="res://Scenes/killzone.tscn" id="5_qwvl8"]
-[ext_resource type="Texture2D" uid="uid://b13cdn5hppd7p" path="res://Assets/flyingenemy.png" id="6_2l40f"]
-[ext_resource type="Texture2D" uid="uid://dya52ckwtv2no" path="res://Assets/flyingenemy2.png" id="7_qtd4p"]
+[ext_resource type="Texture2D" uid="uid://crnxgxcqf2iao" path="res://Assets/SNES - Pinocchio - Level 2 - Lampside Setting.png" id="1_3gon2"]
+[ext_resource type="Texture2D" uid="uid://d4aekni8j46d3" path="res://Assets/background.png" id="2_mfade"]
+[ext_resource type="Texture2D" uid="uid://oqfov5ywna8m" path="res://Assets/Dungeon Tile Set.png" id="3_57wqm"]
+[ext_resource type="PackedScene" uid="uid://ca6ghpyj44c38" path="res://Scenes/Player.tscn" id="4_m541l"]
+[ext_resource type="PackedScene" uid="uid://lu4lmmsnmjwr" path="res://Scenes/killzone.tscn" id="5_mpd5m"]
+[ext_resource type="Texture2D" uid="uid://b13cdn5hppd7p" path="res://Assets/flyingenemy.png" id="6_hg0y5"]
+[ext_resource type="Texture2D" uid="uid://dya52ckwtv2no" path="res://Assets/flyingenemy2.png" id="7_v8eer"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_de2c1"]
-texture = ExtResource("3_oe5fb")
+texture = ExtResource("3_57wqm")
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
@@ -441,17 +441,19 @@ texture = ExtResource("3_oe5fb")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_de2c1")
 
-[node name="Game" type="Node2D"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uqh5k"]
+
+[node name="Level3" type="Node2D"]
 
 [node name="Snes-Pinocchio-Level2-LampsideSetting" type="Sprite2D" parent="."]
 position = Vector2(3.41061e-13, 0)
 scale = Vector2(7.18322, 6.09128)
-texture = ExtResource("1_t886o")
+texture = ExtResource("1_3gon2")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(5, -9)
 scale = Vector2(141.35, -95.0062)
-texture = ExtResource("2_gnap7")
+texture = ExtResource("2_mfade")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(3.62422, 3.53538)
@@ -467,13 +469,16 @@ scale = Vector2(0.971865, 0.945835)
 position = Vector2(99, 3)
 scale = Vector2(119.422, 6.92)
 
-[node name="Killzone" parent="." instance=ExtResource("5_qwvl8")]
-position = Vector2(13, 4508)
+[node name="Killzone" parent="." instance=ExtResource("5_mpd5m")]
+position = Vector2(-540, 956)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_uqh5k")
 
 [node name="flyingenemy" type="Sprite2D" parent="."]
 position = Vector2(-403, -288)
-texture = ExtResource("6_2l40f")
+texture = ExtResource("6_hg0y5")
 
 [node name="flyingenemy2" type="Sprite2D" parent="."]
 position = Vector2(-35, -254)
-texture = ExtResource("7_qtd4p")
+texture = ExtResource("7_v8eer")

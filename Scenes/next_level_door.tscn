@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd14alxc43l8s"]
+
+[ext_resource type="Script" path="res://Scenes/NextLevel.gd" id="1_axnwg"]
+[ext_resource type="Texture2D" uid="uid://cal2xwdnek8fx" path="res://Assets/door.png" id="2_n5ay0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vbqdo"]
+radius = 155.625
+height = 336.25
+
+[node name="NextLevel" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_axnwg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_n5ay0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 1.6)
+shape = SubResource("CapsuleShape2D_vbqdo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
