@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://crs4is51nphuq"]
+
+[ext_resource type="Script" path="res://Lava.gd" id="1_rtyge"]
+[ext_resource type="Texture2D" uid="uid://m7qokdc1wir" path="res://Assets/laVA.jpg" id="2_es5rk"]
+[ext_resource type="PackedScene" path="res://killzone.tscn" id="3_gpwfx"]
+
+[node name="Lava" type="Node2D"]
+script = ExtResource("1_rtyge")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_es5rk")
+
+[node name="Killzone" parent="." instance=ExtResource("3_gpwfx")]
+position = Vector2(0, -119)
