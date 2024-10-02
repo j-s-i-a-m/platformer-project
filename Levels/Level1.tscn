@@ -485,8 +485,8 @@ offset_left = 735.0
 offset_top = -545.0
 offset_right = 951.0
 offset_bottom = -496.0
-text = "Space to Jump
-Space again to Double Jump"
+text = "Up to Jump
+Up again to Double Jump"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = -228.0
