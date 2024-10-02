@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dya52ckwtv2no" path="res://Assets/flyingenemy2.png" id="7_v8eer"]
 [ext_resource type="PackedScene" uid="uid://c3v8uqm6svryr" path="res://Scenes/evil_zoro.tscn" id="8_7dkpy"]
 [ext_resource type="PackedScene" uid="uid://dd14alxc43l8s" path="res://Scenes/next_level_door.tscn" id="8_lyugm"]
-[ext_resource type="PackedScene" path="res://Scenes/sanji.tscn" id="9_cmr61"]
+[ext_resource type="PackedScene" uid="uid://bgcwke2edfm2a" path="res://Scenes/sanji.tscn" id="9_cmr61"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_giyep"]
 texture = ExtResource("3_ce6j5")

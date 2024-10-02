@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dajnodjrwhup"]
+[gd_scene load_steps=7 format=3 uid="uid://dajnodjrwhup"]
 
 [ext_resource type="PackedScene" uid="uid://cfoqgfukshpe" path="res://Scenes/movingplatform.tscn" id="1_jjyki"]
 [ext_resource type="PackedScene" uid="uid://ca6ghpyj44c38" path="res://Scenes/Player.tscn" id="2_7jh8q"]
 [ext_resource type="Texture2D" uid="uid://6gqeddnpxk0b" path="res://Assets/chanrbeak.jpg" id="3_5x245"]
 [ext_resource type="Texture2D" uid="uid://ceaidmqxdx3el" path="res://Assets/chrollo.jpg" id="4_dpfyc"]
+[ext_resource type="Texture2D" uid="uid://de7a8hqt2qdk0" path="res://Assets/sleepkuna.jpg" id="5_o68ql"]
+[ext_resource type="Texture2D" uid="uid://by8xg75jeg1c5" path="res://Assets/jogoat.jpg" id="6_qu8hr"]
 
 [node name="Level5" type="Node2D"]
 
@@ -33,3 +35,11 @@ text = "this is... the one piece!"
 [node name="Chrollo" type="Sprite2D" parent="."]
 position = Vector2(122, -100)
 texture = ExtResource("4_dpfyc")
+
+[node name="Sleepkuna" type="Sprite2D" parent="."]
+position = Vector2(2384, -40)
+texture = ExtResource("5_o68ql")
+
+[node name="Jogoat" type="Sprite2D" parent="."]
+position = Vector2(2164, -37)
+texture = ExtResource("6_qu8hr")
