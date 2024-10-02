@@ -1144,3 +1144,19 @@ scale = Vector2(0.3, 0.3)
 [node name="Lava" parent="." instance=ExtResource("10_bodu1")]
 position = Vector2(-1942, 6028)
 scale = Vector2(72.8775, 7.84)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -2165.0
+offset_top = 3892.0
+offset_right = -1979.0
+offset_bottom = 3915.0
+text = "Don't stay for too long...
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -4337.0
+offset_top = -777.0
+offset_right = -3953.0
+offset_bottom = -754.0
+text = "Jump while the elevator goes up for a jump boost!
+"
