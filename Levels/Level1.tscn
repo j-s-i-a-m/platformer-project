@@ -479,3 +479,18 @@ scale = Vector2(0.2, 0.2)
 [node name="EvilZoro" parent="." instance=ExtResource("8_5gt4v")]
 position = Vector2(178, 677)
 scale = Vector2(2, 2)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 735.0
+offset_top = -545.0
+offset_right = 951.0
+offset_bottom = -496.0
+text = "Space to Jump
+Space again to Double Jump"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -228.0
+offset_top = 533.0
+offset_right = 182.0
+offset_bottom = 556.0
+text = "Watch out for Evil Zoro! (I haven't watched one piece)"

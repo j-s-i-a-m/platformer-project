@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dajnodjrwhup"]
+
+[ext_resource type="PackedScene" uid="uid://cfoqgfukshpe" path="res://Scenes/movingplatform.tscn" id="1_jjyki"]
+[ext_resource type="PackedScene" uid="uid://ca6ghpyj44c38" path="res://Scenes/Player.tscn" id="2_7jh8q"]
+[ext_resource type="Texture2D" uid="uid://6gqeddnpxk0b" path="res://Assets/chanrbeak.jpg" id="3_5x245"]
+[ext_resource type="Texture2D" uid="uid://ceaidmqxdx3el" path="res://Assets/chrollo.jpg" id="4_dpfyc"]
+
+[node name="Level5" type="Node2D"]
+
+[node name="Platform" parent="." instance=ExtResource("1_jjyki")]
+position = Vector2(-67, 695)
+scale = Vector2(150, 150)
+
+[node name="Player" parent="." instance=ExtResource("2_7jh8q")]
+position = Vector2(-184, -140)
+scale = Vector2(0.971865, 0.945835)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(99, 3)
+scale = Vector2(119.422, 6.92)
+
+[node name="Chanrbeak" type="Sprite2D" parent="."]
+position = Vector2(-498, -124)
+texture = ExtResource("3_5x245")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -259.0
+offset_top = -206.0
+offset_right = -88.0
+offset_bottom = -183.0
+text = "this is... the one piece!"
+
+[node name="Chrollo" type="Sprite2D" parent="."]
+position = Vector2(122, -100)
+texture = ExtResource("4_dpfyc")
