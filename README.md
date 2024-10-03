@@ -1,0 +1,1 @@
+The double jump and lava were surprisingly easy to implement. I found the pull requests pretty annoying to use as it would often times glitch and cause a few problems. I had to go from making my own sprites to using a free sprite from spritersresource. Always watch the version of godot before you follow the youtube tutorial.
