@@ -1,0 +1,24 @@
+Group Points - 50:
+30/30 points for making a game that functions and is sufficiently complex
+-very cool levels
+7/10 points for following the pull request process correctly (even if working solo, just without reviews)
+-no pull requests, but lots of commits at least
+0/10 points for marketing materials
+-let me know if this was in the repo and I just didn't see it
+
+37/50
+
+
+Individual Points - 25:
+-10 points for making meaningful contributions to your project
+John 	- 10/10
+Joseph	-  5/10 - it looks like most of what you worked on was level 3. let me know if that's incorrect.
+7/10 points for providing a thoughtful reflection in your README file
+-not sure who wrote the reflection, so same points for both of you. either way, it could have been more in-depth. what you do have is right on the mark though.
+0/5 points for reviewing your collaborators’ pull requests (if solo, instead these points will come from your reflection)
+
+17/25 - John
+12/25 - Joseph
+
+54/75 - John
+49/75 - Joseph
